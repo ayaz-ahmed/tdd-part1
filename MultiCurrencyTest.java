@@ -19,4 +19,12 @@ public class MultiCurrencyTest {
 		assertTrue(new Dollar(5).equals(new Dollar(5)));
 		assertFalse(new Dollar(5).equals(new Dollar(6)));
 	}
+	
+	@Test 
+	public void testFranceMultiplication(){
+		Franc fiveFranc = new Franc(5);
+		
+		assertEquals(new Franc(10), fiveFranc.times(2));
+		assertEquals(new Franc(15), fiveFranc.times(3));
+	}
 }
