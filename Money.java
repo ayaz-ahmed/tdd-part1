@@ -22,7 +22,7 @@ class Money implements Expression{
 		return (this.amount == money.amount) && this.currency().equals(money.currency());
 	}
 	
-	public Expression times(int multiplier){
+	public Expression times(int multiplier) {
 		return new Money(amount * multiplier, currency);
 	}
 	
